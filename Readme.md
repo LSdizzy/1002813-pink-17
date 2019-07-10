@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артур Сафин](https://up.htmlacademy.ru/adaptive/17/user/1002813).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Пудов.
 
 ---
 
