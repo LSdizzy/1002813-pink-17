@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink:Фотографии пользователей</title>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -11,7 +15,7 @@
     <div class="page-header__nav-wrapper">
       <nav class="page-header__main-nav main-nav">
         <div class="main-nav__logo-wrapper">
-          <a class="header-logo" href="#" aria-label="Логотип сайта Pink">
+          <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
             <img class="header-logo__image" src="../img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink">
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
@@ -19,13 +23,13 @@
 
         <ul class="main-menu">
           <li class="main-menu__item">
-            <a class="main-menu__link">Главная</a>
+            <a class="main-menu__link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link-active" href="form.html">Конкурс</a>
+            <a class="main-menu__link main-menu__link-active">Конкурс</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
@@ -42,15 +46,15 @@
   <footer class="page-footer">
     <div class="page-footer__content-wrapper">
       <a class="footer-logo" href="index.html"></a>
-      <ul class="social-links">
+      <ul class="page-footer__links social-links">
         <li class="social-links__item">
-          <a class="social-links__link-twitter" href="https://twitter.com"></a>
+          <a class="social-links__link-twitter" href="https://twitter.com" aria-label="Мы в Twitter"></a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link-facebook" href="https://www.facebook.com"></a>
+          <a class="social-links__link-facebook" href="https://www.facebook.com" aria-label="Мы на Facebook"></a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link-youtube" href="https://www.youtube.com"></a>
+          <a class="social-links__link-youtube" href="https://www.youtube.com" aria-label="Мы на Youtube"></a>
         </li>
       </ul>
       <div class="page-footer__copyright">

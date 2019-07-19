@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink:Главная страница</title>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +15,7 @@
       <div class="page-header__nav-wrapper">
         <nav class="page-header__main-nav main-nav">
           <div class="main-nav__logo-wrapper">
-            <a class="header-logo" href="#" aria-label="Логотип сайта Pink">
+            <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
               <img class="header-logo__image" src="../img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink">
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
@@ -42,13 +45,13 @@
           <a href="#" class="store__button button">Скачать приложение</a>
           <ul class="store__list">
             <li class="store__item">
-              <a class="store__link logo-apple" href="https://www.apple.com/ru/ios/app-store/"></a>
+              <a class="store__link logo--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Магазин Aplle"></a>
             </li>
             <li class="store__item">
-              <a class="store__link logo-android" href="https://play.google.com/store"></a>
+              <a class="store__link logo--android" href="https://play.google.com/store" aria-label="Магазин Google"></a>
             </li>
             <li class="store__item">
-              <a class="store__link logo-microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"></a>
+              <a class="store__link logo--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"aria-label="Магазин Microsoft"></a>
             </li>
           </ul>
           <p class="store__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
