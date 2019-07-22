@@ -1,21 +1,37 @@
 .advantages {
   background-color: @silver;
-
   background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 26px;
+  background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: 100%;
+  }
 }
 
 .advantages__list {
   .list-style();
+  padding: 60px 20px 305px;
 
   list-style: none;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: 50% 0;
+  background-position: 47% 460px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 20px 4px;
+  }
 }
 
 .advantages__item {
+  width: 280px;
   text-align: center;
 }
 

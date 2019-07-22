@@ -11,6 +11,8 @@
 }
 
 .photo__content {
+  display: flex;
+  flex-direction: column;
   background-color: @silver;
 }
 
@@ -28,8 +30,13 @@
   text-transform: uppercase;
 }
 
+.photo__time {
+  font-weight: 300;
+}
+
 .photo__text {
-  .list-style();
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .photo__like-button {

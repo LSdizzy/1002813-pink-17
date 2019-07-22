@@ -1,10 +1,23 @@
 .main-nav {
-  background-color: transparent;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: transparent;
+  }
 }
 
 .main-nav__tongle {
   color: @white;
   background-color: transparent;
-  display: none;
   border: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

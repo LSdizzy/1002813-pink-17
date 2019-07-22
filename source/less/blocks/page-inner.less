@@ -1,6 +1,25 @@
+.page-inner__title-wrapper {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 50px;
+  }
+}
+
 .page-inner__title {
-  .list-style();
+  margin: 0 auto;
 
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

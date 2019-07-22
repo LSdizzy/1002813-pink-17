@@ -1,8 +1,36 @@
 .store {
   padding: 424px 20px 30px;
 
+  width: 281px;
+
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 74px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 26px 99px;
+    width: 940px;
+  }
+}
+
+.store__title {
+  display: none;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .store__list {
@@ -18,9 +46,15 @@
 
   color: @white;
   border-color: @white;
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .store__description {
+  .list-style();
+
   font-weight: 300;
   text-align: center;
 }
