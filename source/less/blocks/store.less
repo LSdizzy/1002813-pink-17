@@ -1,21 +1,30 @@
 .store {
-  padding: 424px 20px 30px;
+  padding: 565px 20px 30px;
 
   width: 281px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: 1px 109px;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
+    padding: 515px 20px 30px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 74px;
+    background-position: -20px 72px;
     width: 620px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 641px 10px 30px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 26px 99px;
     width: 940px;
+  }
+}
+
+.store__content {
+  @media (min-width: @tablet-width) {
+    width: 294px;
   }
 }
 
@@ -30,6 +39,14 @@
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
+  }
+
+  &--first {
+    width: 733px;
+  }
+
+  &--second {
+    width: 727px;
   }
 }
 

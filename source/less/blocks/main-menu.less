@@ -6,12 +6,29 @@
   color: @white;
 
   border-top: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 622px;
+    border-top: 0;
+    line-height: 18px;
+  }
 }
 
 .main-menu__item {
+  padding-top: 15px;
+  padding-bottom: 13px;
+
   border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    border: 0;
+  }
 }
 
 .main-menu__link {
@@ -23,4 +40,10 @@
 
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: none;
+  }
 }
