@@ -3,8 +3,6 @@
 
   line-height: 32px;
 
-  color: @white;
-
   border-top: 1px solid @black;
 
   @media (min-width: @desktop-width) {
@@ -26,8 +24,15 @@
   text-align: center;
 
   @media (min-width: @desktop-width) {
+    margin: 10px 0;
     padding: 0;
     border: 0;
+  }
+
+  &:not(:nth-child(4n+4)) {
+    @media (min-width: @desktop-width) {
+      margin-right: 84px;
+    }
   }
 }
 
@@ -42,7 +47,7 @@
   text-decoration: none;
 
   @media (min-width: @desktop-width) {
-    font-size: 18px;
+    padding: 0;
     font-weight: 300;
     text-transform: none;
   }
