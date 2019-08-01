@@ -53,7 +53,7 @@
 
 .page-header__title {
   .list-style();
-
+  .container();
   margin-top: 16px;
   margin-bottom: 16px;
 
@@ -63,8 +63,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    /*width: 556px;
-    margin-left: 182px;*/
+    width: 635px;
     margin-top: 34px;
     margin-bottom: 34px;
 
@@ -72,10 +71,13 @@
     line-height: 60px;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 750px;
+  }
+
   &--photo {
     @media (min-width: @desktop-width) {
       width: 556px;
-      margin-left: 182px;
     }
   }
 }
