@@ -3,18 +3,41 @@
 
   line-height: 32px;
 
-  color: @white;
-
   border-top: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 622px;
+    border-top: 0;
+    line-height: 18px;
+  }
 }
 
 .main-menu__item {
   border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &:not(:nth-child(4n+4)) {
+    @media (min-width: @desktop-width) {
+      margin-right: 84px;
+    }
+  }
 }
 
 .main-menu__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -23,4 +46,10 @@
 
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    font-weight: 300;
+    text-transform: none;
+  }
 }

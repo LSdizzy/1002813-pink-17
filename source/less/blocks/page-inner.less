@@ -1,6 +1,31 @@
-.page-inner__title {
-  .list-style();
-
-  line-height: 30px;
+.page-inner__title-wrapper {
+  padding-top: 45px;
+  padding-bottom: 35px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 92px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 50px;
+  }
+}
+
+.page-inner__title {
+  width: 235px;
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 550px;
+    max-width: 600px;
+  }
 }

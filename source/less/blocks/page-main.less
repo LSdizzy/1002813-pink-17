@@ -1,11 +1,51 @@
 .page-main__titles {
-  margin: 0 auto;
+  .container();
+  padding: 41px 20px 30px;
+  max-width: 940px;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 0px 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 0px 75px;
+  }
 }
 
 .page-main__title {
-  .list-style();
-
+  margin: 0 auto;
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 28px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 48px;
+
+    &--second {
+      width: 335px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+
+    &--second {
+      width: 420px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.adventages__item-description {
+  width: 271px;
+  margin-top: 13px;
+  margin-bottom: 18px;
 }

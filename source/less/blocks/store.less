@@ -1,26 +1,132 @@
 .store {
-  padding: 424px 20px 30px;
+  padding: 423px 20px 30px;
+
+  width: 280px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: 1px 109px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 91px;
+    padding-bottom: 110px;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 72px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 108px 10px 121px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 26px 99px;
+    width: 940px;
+  }
+}
+
+.store__content {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.store__title {
+  display: none;
+  padding: 0 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 31px;
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+    font-size: 50px;
+  }
+
+  &--first {
+    width: 733px;
+  }
+
+  &--second {
+    width: 727px;
+  }
 }
 
 .store__list {
   .list-style();
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 32px;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 56px;
+  }
+}
+
+.store__item {
+  margin-left: 12px;
+  margin-right: 9px;
+}
+
+.store__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
+
+  &--apple {
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+  }
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: 4px 9px;
+  }
+
+  &--microsoft {
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 13px;
+  }
 }
 
 .store__button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-
-  text-decoration: none;
-
   color: @white;
   border-color: @white;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    line-height: 24px;
+  }
 }
 
 .store__description {
+  .list-style();
+
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
