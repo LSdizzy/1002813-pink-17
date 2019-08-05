@@ -47,7 +47,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
-    height: 137px;
+    height: 135px;
 
     @media (min-width: @tablet-width) {
       height: 509px;
@@ -65,6 +65,13 @@
   display: block;
   max-width: 100%;
   height: auto;
+
+  &--full {
+    @media (min-width: @tablet-width) {
+      width: 660px;
+      height: 600px;
+    }
+  }
 }
 
 .photo__content {

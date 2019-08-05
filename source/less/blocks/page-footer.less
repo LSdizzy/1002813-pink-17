@@ -49,6 +49,14 @@
 .page-footer__copyright-link {
   display: block;
   color: @pink;
+
+  &:hover {
+    color: @bg-color-header;
+  }
+
+  &:active {
+    color: fade(@bg-color-header, 30%);
+  }
 }
 
 .page-footer__copyright-icon {

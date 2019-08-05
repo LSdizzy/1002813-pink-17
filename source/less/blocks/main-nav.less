@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,7 @@
 .main-nav__logo-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 22px 20px 25px;
+  padding: 21px 20px 24px;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
@@ -30,8 +32,6 @@
 
 
 .main-nav__toggle {
-  position: relative;
-  display: none;
   align-self: flex-end;
   padding: 0;
   border: 0;
@@ -39,6 +39,29 @@
   height: 24px;
   color: @white;
   background-color: transparent;
+
+  &--open {
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: no-repeat;
+    background-position: 1px -1px;
+  }
+
+  &--close {
+    background-image: url("../img/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    color: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
