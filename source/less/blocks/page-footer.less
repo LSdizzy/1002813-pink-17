@@ -7,6 +7,19 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 74px;
+  }
+
+  &--index {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .page-footer__content-wrapper {
@@ -25,9 +38,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 155px;
 
   @media (min-width: @tablet-width) {
-    .container();
+    /*.container();*/
     justify-content: flex-end;
   }
 }

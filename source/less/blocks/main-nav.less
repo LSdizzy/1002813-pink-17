@@ -12,6 +12,10 @@
 
     background-color: transparent;
   }
+
+  &--closed {
+    background-color: fade(@black, 30%);
+  }
 }
 
 .main-nav__logo-wrapper {
@@ -40,7 +44,7 @@
   color: @white;
   background-color: transparent;
 
-  &--open {
+  &--opened {
     width: 24px;
     height: 24px;
 
@@ -49,7 +53,7 @@
     background-position: 1px -1px;
   }
 
-  &--close {
+  &--closed {
     background-image: url("../img/icon-menu-burger.svg");
     background-repeat: no-repeat;
   }
