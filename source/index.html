@@ -34,19 +34,17 @@
 </head>
 <body>
 
-    <header class="page-header">
-      <div class="page-header__nav-wrapper">
-        <nav class="page-header__main-nav main-nav">
+    <header class="page-header page-header--opened">
+      <div class="page-header__nav-wrapper page-header__nav-wrapper--opened">
+        <nav class="page-header__main-nav main-nav main-nav--opened">
           <div class="main-nav__logo-wrapper">
             <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-              <svg class="header-logo__image header-logo__image--mobile" src="../img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink">
-              <svg class="header-logo__image header-logo__image--tablet" src="../img/logo-pink-white-tablet.svg" alt="Логотип приложения Pink">
-              <svg class="header-logo__image header-logo__image--desktop" src="../img/logo-pink-white-desktop.svg" alt="Логотип приложения Pink">
+              <div class="header-logo__image" alt="Логотип приложения Pink"></div>
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
           </div>
 
-          <ul class="main-menu">
+          <ul class="main-menu main-menu--opened">
             <li class="main-menu__item">
               <a class="main-menu__link main-menu__link-active">Главная</a>
             </li>
@@ -110,7 +108,45 @@
           </ul>
         </section>
 
+        <section class="efficiency">
+          <div class="efficiency__content-wrapper">
+            <div class="efficiency__image">
+              <span class="efficiency__image-text">24</span>
+            </div>
+            <div class="efficiency__description">
+              <h2 class="efficiency__title">Эффект на&nbsp;24 часа!</h2>
+
+              <p class="efficiency__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+
+              <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </section>
+
     </main>
 
+    <footer class="page-footer page-footer--index">
+      <div class="page-footer__content-wrapper content-wrapper">
+        <a class="footer-logo" href="index.html"></a>
+        <ul class="page-footer__links social-links">
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--twitter" href="https://twitter.com"></a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--facebook" href="https://www.facebook.com"></a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--youtube" href="https://www.youtube.com"></a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+            <svg class="page-footer__copyright-icon"></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

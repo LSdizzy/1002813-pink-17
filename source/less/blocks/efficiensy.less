@@ -1,0 +1,95 @@
+.efficiency {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @silver;
+  }
+}
+
+.efficiency__content-wrapper {
+  .container();
+  padding: 57px 20px 72px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17px 10px 66px;
+    width: 940px;
+  }
+}
+
+.efficiency__image {
+  box-sizing: border-box;
+  padding: 75px 64px 51px;
+  width: 238px;
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 238px 279px;
+  background-position: 0 -2px;
+
+  @media (min-width: @desktop-width) {
+    padding: 95px 64px 64px 80px;
+    width: 364px;
+    background-size: 300px 360px;
+    background-position: 0 -7px;
+  }
+}
+
+.efficiency__image-text {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 150px;
+  color: @pink;
+
+  @media (min-width: @desktop-width) {
+    font-size: 120px;
+    line-height: 187px;
+  }
+}
+
+.efficiency__description {
+  margin-top: 13px;
+  width: 311px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 65px;
+    width: 573px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.efficiency__title {
+  margin-top: 23px;
+  margin-bottom: 10px;
+  width: 200px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 26px;
+    margin-bottom: 22px;
+    width: auto;
+  }
+}
+
+.efficiency__text {
+  margin-top: 10px;
+  margin-bottom: 11px;
+
+  @media (min-width: @desktop-width) {
+    width: 510px;
+    margin-top: 22px;
+    margin-bottom: 31px;
+  }
+}

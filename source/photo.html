@@ -39,9 +39,9 @@
       <nav class="page-header__main-nav main-nav">
         <div class="main-nav__logo-wrapper">
           <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-            <img class="header-logo__image" src="../img/logo-pink-white-mobile.svg" alt="Логотип приложения Pink">
+            <div class="header-logo__image" alt="Логотип приложения Pink"></div>
           </a>
-          <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Меню"></button>
         </div>
 
         <ul class="main-menu">
@@ -78,7 +78,7 @@
         <figure class="photo photo--full">
           <a href="#" class="photo__link photo__link--full">
             <picture>
-              <img class="photo__image" src="../img/panorama-mobile@1x.jpg" alt="Фотография дня">
+              <img class="photo__image photo__image--full" src="../img/panorama-mobile@1x.jpg"  alt="Фотография дня">
             </picture>
           </a>
           <figcaption class="photo__content photo__content--full">
@@ -101,7 +101,7 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="http://placehold.it/150x100" alt="" >
+                <img class="photo__image" src="../img/photo-car-mobile@1x.jpg" alt="" >
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -120,7 +120,7 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="http://placehold.it/150x100" alt="">
+                <img class="photo__image" src="../img/photo-drumset-mobile@1x.jpg" alt="">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -139,7 +139,7 @@
           <figure class="gallery__photo photo">
             <a href="" class="photo__link">
               <picture>
-                <img class="photo__image" src="http://placehold.it/150x100" alt="">
+                <img class="photo__image" src="../img/photo-window-mobile@1x.jpg" alt="">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -158,7 +158,7 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#" >
               <picture>
-                <img class="photo__image" src="http://placehold.it/150x100" alt="">
+                <img class="photo__image" src="../img/photo-fair-mobile@1x.jpg" alt="">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -177,7 +177,7 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="http://placehold.it/150x100" alt="">
+                <img class="photo__image" src="../img/photo-pov-mobile@1x.jpg" alt="">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -196,7 +196,7 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="http://placehold.it/150x100" alt="">
+                <img class="photo__image" src="../img/photo-wing-mobile@1x.jpg" alt="">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -211,7 +211,78 @@
               </div>
             </figcaption>
           </figure>
+        </div>
+      </section>
 
+      <section class="photo-editor">
+        <header class="photo-editor__header">
+          <h2 class="visually-hidden">Редактировать фотографию</h2>
+
+          <p class="photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
+
+        <div class="photo-editor__form-wrapper content-wrapper">
+          <form class="form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+            <input class="visually-hidden" type="file" id="image" name="image">
+            <label class="form-photo__image" for="image" aria-label="Добавьте файл фотографии"></label>
+
+            <div class="form-photo__controls">
+              <div class="form-photo__filters">
+                <div class="form-photo__filter-buttons">
+                  <button class="form-photo__filter-button form-photo__filter-button--current" type="button" aria-label="Обрезка"></button>
+                  <button class="form-photo__filter-button" type="button" aria-label="Заливка"></button>
+                  <button class="form-photo__filter-button" type="button" aria-label="ОКонтрастность"></button>
+                </div>
+
+                <div class="form-photo__filter form-photo__filter--current">
+                  <div class="form-photo__icon-wrapper">
+                    <span class="form-photo__icon form-photo__icon--crop"></span>
+                  </div>
+
+                  <div class="form-photo__filter-wrapper">
+                    <div class="form-photo__filter-range">
+                      <div class="form-photo__filter-slider"></div>
+                    </div>
+                  </div>
+
+                  <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="85"> -->
+                </div>
+
+                <div class="form-photo__filter">
+                  <div class="form-photo__icon-wrapper">
+                    <span class="form-photo__icon form-photo__icon--fill"></span>
+                  </div>
+
+                  <div class="form-photo__filter-wrapper">
+                    <div class="form-photo__filter-range">
+                      <div class="form-photo__filter-slider"></div>
+                    </div>
+                  </div>
+
+                  <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="14"> -->
+                </div>
+
+                <div class="form-photo__filter">
+                  <div class="form-photo__icon-wrapper">
+                    <span class="form-photo__icon form-photo__icon--contrast"></span>
+                  </div>
+
+                  <div class="form-photo__filter-wrapper">
+                    <div class="form-photo__filter-range">
+                      <div class="form-photo__filter-slider"></div>
+                    </div>
+                  </div>
+
+                  <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast"value="51"> -->
+                </div>
+              </div>
+
+              <div class="form-photo__buttons">
+                <button class="form-photo__button button button--rounded button--pink" type="submit">Запостить</button>
+                <button class="form-photo__button button button--rounded button--gray" type="reset">Отмена</button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -230,6 +301,7 @@
             <a class="social-links__link social-links__link--youtube" href="https://www.youtube.com"></a>
           </li>
         </ul>
+
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
