@@ -9,13 +9,8 @@
     width: 940px;
     padding-left: 10px;
     padding-right: 10px;
-
-    background-color: transparent;
   }
 
-  &--closed {
-    background-color: fade(@black, 30%);
-  }
 }
 
 .main-nav__logo-wrapper {
@@ -32,6 +27,14 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  &--opened {
+    background-color: transparent;
+  }
+
+  &--closed {
+    background-color: fade(@black, 30%);
+  }
 }
 
 
@@ -43,20 +46,6 @@
   height: 24px;
   color: @white;
   background-color: transparent;
-
-  &--opened {
-    width: 24px;
-    height: 24px;
-
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
-    background-position: 1px -1px;
-  }
-
-  &--closed {
-    background-image: url("../img/icon-menu-burger.svg");
-    background-repeat: no-repeat;
-  }
 
   &:hover,
   &:focus {
@@ -70,4 +59,25 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 0px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 1px 1px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 24px;
+
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
 }

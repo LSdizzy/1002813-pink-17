@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <style>
+  <style>
     HTML {
       background: url( 'img/preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
     }
@@ -30,7 +30,7 @@
     BODY {
       opacity: .5;
     }
-  </style> -->
+  </style>
 </head>
 <body>
 
@@ -228,7 +228,7 @@
 
             <div class="form-photo__controls">
               <div class="form-photo__filters">
-                <div class="form-photo__buttons">
+                <div class="form-photo__filter-buttons">
                   <button class="form-photo__filter-button form-photo__filter-button--current" type="button" aria-label="Обрезка"></button>
                   <button class="form-photo__filter-button" type="button" aria-label="Заливка"></button>
                   <button class="form-photo__filter-button" type="button" aria-label="ОКонтрастность"></button>
@@ -236,28 +236,49 @@
 
                 <div class="form-photo__filter form-photo__filter--current">
                   <div class="form-photo__icon-wrapper">
+                    <span class="form-photo__icon form-photo__icon--crop"></span>
                   </div>
 
-                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="85">
+                  <div class="form-photo__filter-wrapper">
+                    <div class="form-photo__filter-range">
+                      <div class="form-photo__filter-slider"></div>
+                    </div>
+                  </div>
+
+                  <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="crop" value="85"> -->
                 </div>
 
                 <div class="form-photo__filter">
                   <div class="form-photo__icon-wrapper">
+                    <span class="form-photo__icon form-photo__icon--fill"></span>
                   </div>
 
-                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="14">
+                  <div class="form-photo__filter-wrapper">
+                    <div class="form-photo__filter-range">
+                      <div class="form-photo__filter-slider"></div>
+                    </div>
+                  </div>
+
+                  <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="fill" value="14"> -->
                 </div>
 
                 <div class="form-photo__filter">
                   <div class="form-photo__icon-wrapper">
+                    <span class="form-photo__icon form-photo__icon--contrast"></span>
                   </div>
 
-                  <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast"value="51">
+                  <div class="form-photo__filter-wrapper">
+                    <div class="form-photo__filter-range">
+                      <div class="form-photo__filter-slider"></div>
+                    </div>
+                  </div>
+
+                  <!-- <input class="form-photo__filter-range" type="range" min="1" max="100" name="contrast"value="51"> -->
                 </div>
               </div>
 
               <div class="form-photo__buttons">
-                <button class="form-photo__button button button--rounded button--red" type="submit">Запостить</button>
+                <button class="form-photo__button button button--rounded button--pink" type="submit">Запостить</button>
                 <button class="form-photo__button button button--rounded button--gray" type="reset">Отмена</button>
               </div>
             </div>
