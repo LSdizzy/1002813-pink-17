@@ -37,7 +37,11 @@
       <nav class="page-header__main-nav main-nav">
         <div class="main-nav__logo-wrapper">
           <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-            <div class="header-logo__image" alt="Логотип приложения Pink"></div>
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg" type="">
+              <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg" type="">
+              <img src="../img/logo-pink-white-mobile.svg" alt="Приложение Pink">
+            </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Меню"></button>
         </div>

@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <style>
+  <!-- <style>
     HTML {
       background: url( 'img/preview/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
     }
@@ -30,21 +30,25 @@
     BODY {
       opacity: .5;
     }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  <header class="page-header">
-    <div class="page-header__nav-wrapper">
-      <nav class="page-header__main-nav main-nav">
+  <header class="page-header page-header--opened">
+    <div class="page-header__nav-wrapper page-header__nav-wrapper--opened">
+      <nav class="page-header__main-nav main-nav main-nav--opened">
         <div class="main-nav__logo-wrapper">
           <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-            <div class="header-logo__image" alt="Логотип приложения Pink"></div>
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg" type="">
+              <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg" type="">
+              <img class="header-logo__image" src="../img/logo-pink-white-mobile.svg" alt="Приложение Pink">
+            </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Меню"></button>
         </div>
 
-        <ul class="main-menu">
+        <ul class="main-menu main-menu--opened">
           <li class="main-menu__item">
             <a class="main-menu__link" href="index.html">Главная</a>
           </li>
@@ -78,7 +82,10 @@
         <figure class="photo photo--full">
           <a href="#" class="photo__link photo__link--full">
             <picture>
-              <img class="photo__image photo__image--full" src="../img/panorama-mobile@1x.jpg"  alt="Фотография дня">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
             </picture>
           </a>
           <figcaption class="photo__content photo__content--full">
@@ -101,7 +108,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-car-mobile@1x.jpg" alt="" >
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-car-mobile@1x.jpg"
+                srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -120,7 +130,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-drumset-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -139,7 +152,10 @@
           <figure class="gallery__photo photo">
             <a href="" class="photo__link">
               <picture>
-                <img class="photo__image" src="../img/photo-window-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -158,7 +174,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#" >
               <picture>
-                <img class="photo__image" src="../img/photo-fair-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-fair-mobile@1x.jpg"
+                srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -177,7 +196,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-pov-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-pov-mobile@1x.jpg"
+                srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -196,7 +218,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-wing-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-wing-mobile@1x.jpg"
+                srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">

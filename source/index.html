@@ -39,7 +39,11 @@
         <nav class="page-header__main-nav main-nav main-nav--opened">
           <div class="main-nav__logo-wrapper">
             <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-              <div class="header-logo__image" alt="Логотип приложения Pink"></div>
+              <picture>
+                <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg" type="">
+                <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg" type="">
+                <img src="../img/logo-pink-white-mobile.svg" alt="Приложение Pink">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
           </div>
@@ -69,7 +73,11 @@
           <a href="#" class="store__button button button--rounded">Скачать приложение</a>
           <ul class="store__list">
             <li class="store__item">
-              <a class="store__link store__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Магазин Apple"></a>
+              <a class="store__link store__link--apple" href="https://www.apple.com/ru/ios/app-store/" aria-label="Магазин Apple">
+                <svg width="46" height="57">
+                  <use xlink:href="img/symbols.svg#logo-apple"></use>
+                </svg>
+              </a>
             </li>
             <li class="store__item">
               <a class="store__link store__link--android" href="https://play.google.com/store" aria-label="Магазин Google"></a>
