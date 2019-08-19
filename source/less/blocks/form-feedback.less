@@ -368,7 +368,7 @@
 }
 
 .form-feedback__label {
-  display: block;
+  display: flex;
   margin-left: 22px;
   margin-bottom: 5px;
   line-height: 30px;
@@ -391,7 +391,7 @@
 }
 
 .form-feedback__input {
-  display: block;
+  display: flex;
   padding: 14px 20px 15px;
   box-sizing: border-box;
   width: 100%;
@@ -500,7 +500,7 @@
 
 .form-feedback__checkbox {
   &:focus + .form-feedback__label-checkbox {
-    outline: 1px dashed @pink;
+    outline: 1px solid @pink;
     outline-offset: 2px;
   }
 
@@ -520,7 +520,7 @@
 
 .form-feedback__radio {
   &:focus + .form-feedback__label-radio {
-    outline: 1px dashed @pink;
+    outline: 1px solid @pink;
     outline-offset: 2px;
   }
 

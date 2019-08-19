@@ -1,10 +1,12 @@
 .page-footer {
-  overflow: hidden;
+/*  .container();
+*/  overflow: hidden;
   padding-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 40px;
+    .container();
+    padding-top: 35px;
     padding-bottom: 40px;
   }
 
@@ -51,12 +53,19 @@
 }
 
 .page-footer__copyright-text {
-  margin-right: 16px;
+  margin-right: 17px;
+  margin-top: -12px;
   line-height: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 14px;
+    margin-right: 16px;
+    margin-top: 6px;
     line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin-top: -3px;
   }
 }
 
@@ -76,7 +85,11 @@
 .page-footer__copyright-icon {
   display: block;
   width: 27px;
-  height: 34px;
+  height: 45px;
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
+
+@media (min-width: @tablet-width) {
+    background-position: 0 10px;
+  }
 }

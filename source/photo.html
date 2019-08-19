@@ -34,8 +34,8 @@
 </head>
 <body>
 
-  <header class="page-header">
-    <div class="page-header__nav-wrapper page-header__nav-wrapper--opened">
+  <header class="page-header page-header--opened">
+    <div class="page-header__nav-wrapper">
       <nav class="page-header__main-nav main-nav main-nav--opened">
         <div class="main-nav__logo-wrapper">
           <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
@@ -80,7 +80,7 @@
         <h2 class="visually-hidden">Галерея пользователей приложения</h2>
 
         <figure class="photo photo--full">
-          <a href="#" class="photo__link photo__link--full">
+          <a href="#" class="photo__link photo__link--full" data-panorama-text="Панорама дня">
             <picture>
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -246,7 +246,7 @@
           <p class="photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </header>
 
-        <div class="photo-editor__form-wrapper content-wrapper">
+        <div class="photo-editor__form-wrapper">
           <form class="form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
             <input class="visually-hidden" type="file" id="image" name="image">
             <label class="form-photo__image" for="image" aria-label="Добавьте файл фотографии"></label>
