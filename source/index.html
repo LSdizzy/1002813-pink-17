@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <style>
+  <!-- <style>
     HTML {
       background: url( 'img/preview/pink-index-mobile.jpg' ) 50% 0 no-repeat;
     }
@@ -30,7 +30,7 @@
     BODY {
       opacity: .5;
     }
-  </style>
+  </style> -->
 </head>
 <body>
 
@@ -190,7 +190,7 @@
                     <span class="table-price__license-type">База</span>
                     <span class="table-price__license-price">1,99 USD</span>
                   </th>
-                  <th class="table-price__header table-price__header--hit" data-hit-text="Хит">
+                  <th class="table-price__header table-price__header--hit">
                     <span class="table-price__license-type">Стандарт</span>
                     <span class="table-price__license-price">3,99 USD</span>
                   </th>
@@ -290,6 +290,52 @@
             </div>
           </div>
         </section>
+
+        <section class="contacts content-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+
+          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+
+          <dl class="contacts__list">
+            <div class="contacts__item contacts__item--phone">
+              <dt class="contacts__list-term">Звоните:</dt>
+              <dd class="contacts__list-description">
+                <a class="contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </dd>
+            </div>
+
+            <div class="contacts__item contacts__item--email">
+              <dt class="contacts__list-term">Пишите:</dt>
+              <dd class="contacts__list-description">
+                <a class="contacts__list-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </dd>
+            </div>
+
+            <div class="contacts__item contacts__item--address">
+              <dt class="contacts__list-term">Приезжайте в гости:</dt>
+              <dd class="contacts__list-description">
+                <address class="contacts__list-address">ул. Большая Конюшенная, 19/8</address>
+              </dd>
+            </div>
+
+          </dl>
+        </section>
+
+        <div class="map">
+        <picture>
+          <source media="(min-width: 960px)"
+            srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x"
+            alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
+
+        <div class="map__marker"></div>
+
+        <div class="map__interactive"></div>
+      </div>
+    </main>
 
     </main>
 
