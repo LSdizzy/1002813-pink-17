@@ -1,32 +1,36 @@
 .store {
-  padding: 423px 20px 30px;
-
-  width: 280px;
-
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 1px 109px;
-  background-repeat: no-repeat;
+  min-height: 270px;
+  background-color: @darkblue;
+  color: @white;
 
   @media (min-width: @tablet-width) {
-    padding-top: 91px;
-    padding-bottom: 110px;
-
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 72px;
-    width: 620px;
+    .container();
+    position: relative;
+    z-index: 10;
+    margin-top: -540px;
+    margin-bottom: 109px;
+    background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 108px 10px 121px;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 26px 99px;
-    width: 940px;
+    margin-top: -650px;
+    margin-bottom: 121px;
   }
 }
 
 .store__content {
+  .container();
+  padding-top: 28px;
+
   @media (min-width: @tablet-width) {
+    margin-left: 20px;
     width: 300px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 13px;
+    margin-left: 10px;
   }
 }
 

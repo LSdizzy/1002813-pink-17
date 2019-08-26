@@ -8,7 +8,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <style>
+  <style>
     HTML {
       background: url( 'img/preview/pink-form-mobile.jpg' ) 50% 0 no-repeat;
     }
@@ -28,40 +28,42 @@
     BODY {
       opacity: .5;
     }
-  </style> -->
+  </style>
 </head>
 <body>
 
-  <header class="page-header page-header--opened">
-    <div class="page-header__nav-wrapper page-header__nav-wrapper--opened">
-      <nav class="page-header__main-nav main-nav main-nav--opened">
-        <div class="main-nav__logo-wrapper">
-          <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-            <picture>
-              <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg">
-              <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg">
-              <img src="../img/logo-pink-white-mobile.svg" alt="Приложение Pink">
-            </picture>
-          </a>
-          <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Меню"></button>
-        </div>
+  <header class="page-header page-header--inner">
+    <div class="page-header__nav-wrapper">
+      <h1 class="visually-hidden">Приложение PINK</h1>
+      <nav class="main-nav main-nav--opened">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
+              <picture>
+                <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img src="../img/logo-pink-white-mobile.svg" alt="Приложение Pink">
+              </picture>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+          </div>
 
-        <ul class="main-menu main-menu--opened">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link-active">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item main-menu__link--active">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
 
     <div class="page-header__title-wrapper content-wrapper">
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -198,7 +200,7 @@
     </main>
 
   <footer class="page-footer">
-    <div class="page-footer__content-wrapper contentnt-wrapper">
+    <div class="page-footer__content-wrapper content-wrapper">
       <a class="footer-logo" href="index.html"></a>
       <ul class="page-footer__links social-links">
         <li class="social-links__item">
@@ -219,3 +221,5 @@
       </div>
     </div>
   </footer>
+  <script src="js/drop-menu.js"></script>
+</html>
