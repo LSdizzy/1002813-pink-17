@@ -34,32 +34,38 @@
 </head>
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--inner">
     <div class="page-header__nav-wrapper">
-      <nav class="page-header__main-nav main-nav">
-        <div class="main-nav__logo-wrapper">
-          <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
-            <div class="header-logo__image" alt="Логотип приложения Pink"></div>
-          </a>
-          <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Меню"></button>
-        </div>
+      <h1 class="visually-hidden">Приложение PINK</h1>
+      <nav class="main-nav main-nav--opened">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="header-logo" href="index.html" aria-label="Логотип сайта Pink">
+              <picture>
+                <source media="(min-width:960px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width:660px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img src="../img/logo-pink-white-mobile.svg" alt="Приложение Pink">
+              </picture>
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+          </div>
 
-        <ul class="main-menu">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link-active">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item main-menu__link--active">
+              <a class="main-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
 
     <div class="page-header__title-wrapper">
       <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
@@ -76,9 +82,12 @@
         <h2 class="visually-hidden">Галерея пользователей приложения</h2>
 
         <figure class="photo photo--full">
-          <a href="#" class="photo__link photo__link--full">
+          <a href="#" class="photo__link photo__link--full" data-panorama-text="Панорама дня">
             <picture>
-              <img class="photo__image photo__image--full" src="../img/panorama-mobile@1x.jpg"  alt="Фотография дня">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" width="1200px">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография дня">
             </picture>
           </a>
           <figcaption class="photo__content photo__content--full">
@@ -101,7 +110,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-car-mobile@1x.jpg" alt="" >
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-car-mobile@1x.jpg"
+                srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -120,7 +132,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-drumset-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -139,7 +154,10 @@
           <figure class="gallery__photo photo">
             <a href="" class="photo__link">
               <picture>
-                <img class="photo__image" src="../img/photo-window-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -158,7 +176,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#" >
               <picture>
-                <img class="photo__image" src="../img/photo-fair-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-fair-mobile@1x.jpg"
+                srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -177,7 +198,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-pov-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-pov-mobile@1x.jpg"
+                srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -196,7 +220,10 @@
           <figure class="gallery__photo photo">
             <a class="photo__link" href="#">
               <picture>
-                <img class="photo__image" src="../img/photo-wing-mobile@1x.jpg" alt="">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-wing-mobile@1x.jpg"
+                srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография дня">
               </picture>
             </a>
             <figcaption class="photo__content">
@@ -221,7 +248,7 @@
           <p class="photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </header>
 
-        <div class="photo-editor__form-wrapper content-wrapper">
+        <div class="photo-editor__form-wrapper">
           <form class="form-photo" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
             <input class="visually-hidden" type="file" id="image" name="image">
             <label class="form-photo__image" for="image" aria-label="Добавьте файл фотографии"></label>
@@ -304,12 +331,12 @@
 
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+          <a class="page-footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/17">
             <svg class="page-footer__copyright-icon"></svg>
           </a>
         </div>
       </div>
     </footer>
-
+    <script src="js/drop-menu.js"></script>
 </body>
 </html>

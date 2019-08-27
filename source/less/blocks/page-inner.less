@@ -1,6 +1,10 @@
+.page-inner {
+  /*.container();*/
+}
+
 .page-inner__title-wrapper {
   padding-top: 45px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -16,7 +20,6 @@
 .page-inner__title {
   width: 235px;
   margin: 0 auto;
-  max-width: 500px;
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
@@ -26,6 +29,21 @@
 
   @media (min-width: @desktop-width) {
     width: 550px;
-    max-width: 600px;
   }
+
+  &--page-form {
+    width: 270px;
+
+    @media (min-width: @tablet-width) {
+      width: 490px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 720px;
+    }
+  }
+}
+
+.page-inner__form-feedback {
+  margin: 0 auto;
 }
