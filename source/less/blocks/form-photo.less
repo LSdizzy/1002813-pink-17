@@ -155,6 +155,35 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
 }
 
 .form-photo__icon-wrapper {
@@ -186,6 +215,10 @@
 .form-photo__button {
   margin-bottom: 13px;
   width: 100%;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 26px;
@@ -289,5 +322,10 @@
 
   @media (min-width: @desktop-width) {
     left: 71px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @pink;
   }
 }

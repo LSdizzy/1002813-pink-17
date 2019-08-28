@@ -1,21 +1,13 @@
-.header-logo {
+.header-logo__wrapper {
   display: block;
   width: 75px;
   height: 22px;
 
-  color: @white;
+  /*fill: @pink;*/
 
   @media (min-width: @tablet-width) {
     width: 147px;
     height: 40px;
-  }
-
-  &[href]:hover {
-    color: @pink;
-  }
-
-  &[href]:active {
-    opacity: 0.3;
   }
 }
 
@@ -23,8 +15,8 @@
   display: block;
   width: 74px;
   height: 24px;
-  fill: currentColor;
-  pointer-events: none;
+  /*fill: currentColor;*/
+  /*pointer-events: none;*/
 
   @media (min-width: @tablet-width) {
     width: 147px;
@@ -55,5 +47,18 @@
     @media (min-width: @desktop-width) {
       display: block;
     }
+  }
+}
+
+.header-logo__link {
+  fill: @white;
+
+  &[href]:hover {
+    fill: @pink;
+  }
+
+  &[href]:active {
+    fill: @white;
+    opacity: 0.3;
   }
 }

@@ -2,9 +2,7 @@
   display: block;
   width: 146px;
   height: 40px;
-  color: @bg-color-header;
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-repeat: no-repeat;
+  /*color: @bg-color-header;*/
 
   &[href]:hover {
     color: @pink;
@@ -19,6 +17,18 @@
   display: block;
   width: 146px;
   height: 40px;
-  fill: currentColor;
-  pointer-events: none;
+
+  &--tablet {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }
