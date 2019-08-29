@@ -163,7 +163,7 @@
   }
 
   &--fill {
-    background-image: url("../img/icon-editor-fill.svg");
+    background-image: url("../img/icon-editor-fill-black.svg");
     background-repeat: no-repeat;
     opacity: 0.3;
 
@@ -174,7 +174,7 @@
   }
 
   &--contrast {
-    background-image: url("../img/icon-editor-contrast.svg");
+    background-image: url("../img/icon-editor-contrast-black.svg");
     background-repeat: no-repeat;
     background-position: 6px 6px;
     opacity: 0.3;
@@ -317,11 +317,31 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    left: 146px;
+    &--first {
+      left: 146px;
+    }
+
+    &--second {
+      left: 24px;
+    }
+
+    &--third {
+      left: 95px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    left: 71px;
+    &--first {
+      left: 71px;
+    }
+
+    &--second {
+      left: 247px;
+    }
+
+    &--third {
+      left: 160px;
+    }
   }
 
   &:hover,

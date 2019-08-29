@@ -72,14 +72,6 @@
 .page-footer__copyright-link {
   display: block;
   color: @pink;
-
-  &:hover {
-    color: @bg-color-header;
-  }
-
-  &:active {
-    color: fade(@bg-color-header, 30%);
-  }
 }
 
 .page-footer__copyright-icon {
@@ -91,5 +83,13 @@
 
   @media (min-width: @tablet-width) {
     background-position: 0 10px;
+  }
+
+  &[href]:hover {
+    fill: @bg-color-header;
+  }
+
+  &:active {
+    fill: fade(@bg-color-header, 30%);
   }
 }
