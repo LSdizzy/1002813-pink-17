@@ -46,6 +46,18 @@
     width: 960px;
     background: none;
   }
+
+  @media (min-width: @mobile-width) and (min-resolution: 144dpi), (min-width: @mobile-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 144dpi), (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-3-desktop@2x.png");
+  }
 }
 
 .advantages__item {
