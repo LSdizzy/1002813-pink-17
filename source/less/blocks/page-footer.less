@@ -54,7 +54,7 @@
 
 .page-footer__copyright-text {
   margin-right: 17px;
-  margin-top: -12px;
+  margin-top: 6px;
   line-height: 18px;
 
   @media (min-width: @tablet-width) {
@@ -71,23 +71,22 @@
 
 .page-footer__copyright-link {
   display: block;
-  color: @pink;
+  fill: @pink;
+  height: 25px;
 
-  &:hover {
-    color: @bg-color-header;
+  &[href]:hover {
+    fill: @darkblue;
   }
 
-  &:active {
-    color: fade(@bg-color-header, 30%);
+  &[href]:active {
+    fill: fade(@darkblue, 30%);
   }
 }
 
 .page-footer__copyright-icon {
   display: block;
   width: 27px;
-  height: 45px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+  height: 40px;
 
   @media (min-width: @tablet-width) {
     background-position: 0 10px;
