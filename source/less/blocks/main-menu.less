@@ -60,17 +60,19 @@
     &--active {
       border-bottom: 2px solid #ffffff;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-bottom: 2px solid;
       }
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: @pink;
   }
 
   &:active {
-    color: fade(@pink, 30%);
+    color: fade(@white, 30%);
   }
 }
