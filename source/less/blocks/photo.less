@@ -16,7 +16,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    max-width: 700px;
+    max-width: 660px;
   }
 
   @media (min-width: @desktop-width) {
@@ -47,16 +47,41 @@
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
-    height: 135px;
+    height: 136px;
 
     @media (min-width: @tablet-width) {
       height: 509px;
-      max-width: 700px;
-      width: auto;
+      width: 700px;
     }
 
     @media (min-width: @desktop-width) {
       width: 1200px;
+      height: 506px;
+      overflow: hidden;
+    }
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      z-index: 1;
+      top: -1px;
+      right: 20px;
+      padding: 6px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: @pink;
+
+      @media (min-width: @tablet-width) {
+        top: 57px;
+        right: 39px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 55px;
+        right: 130px;
+      }
     }
   }
 }
@@ -157,7 +182,6 @@
     }
   }
 }
-
 
 .photo__like-button {
   display: block;

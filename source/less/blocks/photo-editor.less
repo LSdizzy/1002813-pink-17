@@ -1,5 +1,13 @@
 .photo-editor {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
   @media (min-width: @desktop-width) {
+    width: 940px;
     padding-bottom: 30px;
   }
 }
@@ -20,7 +28,7 @@
 }
 
 .photo-editor__title {
-  width: 312px;
+  width: 260px;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -28,7 +36,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 410px;
+    width: 425px;
     font-size: 18px;
   }
 }

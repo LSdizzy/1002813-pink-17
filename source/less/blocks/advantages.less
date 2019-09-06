@@ -1,18 +1,16 @@
 .advantages {
-  background-color: @silver;
   background-image: url("../img/bg-triangle-white.svg");
-  background-size: 100% 25px;
-  background-position: 0 0;
+  background-color: @silver;
   background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 32px;
 
   @media (min-width: @tablet-width) {
-    /*.container();*/
-    background-size: 100%;
+    background-size: 100% 50px;
   }
 
   @media (min-width: @desktop-width) {
-    /*.container();*/
-    background-size: 100%;
+    background-size: 100% 92px;
   }
 }
 
@@ -23,13 +21,17 @@
   justify-content: center;
 
   padding: 66px 0 305px;
-  /*margin: 0;*/
 
   list-style: none;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 50% 511px;
   background-repeat: no-repeat;
+
+  @media (min-width: @mobile-width) and (min-resolution: 144dpi), (min-width: @mobile-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px 320px;
+  }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -38,6 +40,11 @@
     padding: 55px 20px 27px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: 20px 2px;
+
+    @media (min-width: @tablet-width) and (min-resolution: 144dpi), (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px 481px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -74,6 +81,15 @@
   &--first {
     @media (min-width: @desktop-width) {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+      @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+        background-size: 292px 302px;
+      }
+    }
+
+    @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
   }
 
@@ -81,6 +97,15 @@
     @media (min-width: @desktop-width) {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
       background-position: -23px 0;
+
+      @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+        background-size: 292px 302px;
+      }
+    }
+
+    @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
     }
   }
 
@@ -88,6 +113,15 @@
     @media (min-width: @desktop-width) {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
       background-position: -23px 0;
+
+      @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+        background-size: 292px 302px;
+      }
+    }
+
+    @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
     }
   }
 }
@@ -120,7 +154,6 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    /*пока задал ширину можно поробавать будет сделать как то по другому*/
     width: 238px;
   }
 }

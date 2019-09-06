@@ -27,6 +27,7 @@
 }
 
 .efficiency__image {
+  position: relative;
   box-sizing: border-box;
   padding: 75px 64px 51px;
   width: 238px;
@@ -49,9 +50,29 @@
   line-height: 150px;
   color: @pink;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: 19px;
+    box-sizing: border-box;
+    width: 202px;
+    height: 202px;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 120px;
     line-height: 187px;
+
+    &::before {
+      top: 69px;
+      left: 23px;
+      width: 253px;
+      height: 253px;
+      border-width: 16px;
+    }
   }
 }
 
@@ -88,8 +109,12 @@
   margin-bottom: 11px;
 
   @media (min-width: @desktop-width) {
-    width: 510px;
+    width: 530px;
     margin-top: 22px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
+}
+
+.efficiency__link {
+  color: @pink;
 }

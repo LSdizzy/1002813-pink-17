@@ -1,0 +1,39 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat top center;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+
+    &::before {
+      height: 70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+
+    &::before {
+      height: 100px;
+    }
+  }
+
+  &--nojs {
+    width: 100%;
+    background-image: url("img/map-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}

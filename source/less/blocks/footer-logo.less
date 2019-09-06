@@ -2,15 +2,15 @@
   display: block;
   width: 146px;
   height: 40px;
-  color: @bg-color-header;
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-repeat: no-repeat;
+  fill: @darkblue;
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: @pink;
   }
 
   &[href]:active {
+    fill: #283645;
     opacity: 0.3;
   }
 }
@@ -19,6 +19,24 @@
   display: block;
   width: 146px;
   height: 40px;
-  fill: currentColor;
-  pointer-events: none;
+  fill: #283645;
+
+  &--tablet {
+    display: none;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    fill: #d22856;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
 }

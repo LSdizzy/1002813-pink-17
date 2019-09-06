@@ -1,15 +1,15 @@
 .page-footer {
-  overflow: hidden;
   padding-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 40px;
+    .container();
+    padding-top: 35px;
     padding-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 72px;
+    padding-top: 68px;
     padding-bottom: 74px;
   }
 
@@ -51,32 +51,43 @@
 }
 
 .page-footer__copyright-text {
-  margin-right: 16px;
+  margin-right: 17px;
+  margin-top: 6px;
   line-height: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 14px;
+    margin-right: 16px;
+    margin-top: 6px;
     line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin-top: 0;
   }
 }
 
 .page-footer__copyright-link {
   display: block;
-  color: @pink;
+  fill: @pink;
+  height: 25px;
 
-  &:hover {
-    color: @bg-color-header;
+  &[href]:hover,
+  &[href]:focus {
+    fill: @darkblue;
   }
 
-  &:active {
-    color: fade(@bg-color-header, 30%);
+  &[href]:active {
+    fill: fade(@darkblue, 30%);
   }
 }
 
 .page-footer__copyright-icon {
   display: block;
   width: 27px;
-  height: 34px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 0 10px;
+  }
 }

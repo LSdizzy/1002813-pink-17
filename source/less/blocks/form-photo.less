@@ -30,6 +30,7 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    margin-left: 20px;
     margin-top: 16px;
     width: 300px;
     height: 400px;
@@ -40,6 +41,20 @@
     margin-left: 0;
     background-image: url("../img/photo-road-desktop@1x.jpg");
   }
+
+  @media (min-width: @mobile-width) and (min-resolution: 144dpi), (min-width: @mobile-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+    background-size: 280px;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 144dpi), (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-road-tablet@2x.jpg");
+    background-size: 301px;
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 144dpi), (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/photo-road-desktop@2x.jpg");
+  }
 }
 
 .form-photo__controls {
@@ -47,12 +62,14 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 46px;
+    /*margin-left: auto;*/
     width: 275px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 0;
+    margin-left: 90px;
     width: 410px;
   }
 }
@@ -61,12 +78,12 @@
   padding: 42px 20px 38px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 67px;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 145px;
+    margin-bottom: 146px;
   }
 }
 
@@ -98,7 +115,7 @@
     @media (min-width: @desktop-width) {
       width: 44px;
       height: 44px;
-      background-position: -2px 0px;
+      background-position: -2px 1px;
     }
   }
 
@@ -112,10 +129,14 @@
       height: 24px;
     }
 
+    @media (min-width: @tablet-width) {
+      background-position: 1px 3px;
+    }
+
     @media (min-width: @desktop-width) {
       width: 48px;
       height: 48px;
-      background-position: 0px 2px;
+      background-position: 0 4px;
     }
   }
 
@@ -132,7 +153,7 @@
     @media (min-width: @desktop-width) {
       width: 32px;
       height: 32px;
-      background-position: -1px 0px
+      background-position: -1px 0;
     }
   }
 }
@@ -148,6 +169,45 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+  }
+
+  &--fill {
+    background-image: url("../img/icon-editor-fill-black.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-fill.svg");
+      opacity: 1;
+    }
+  }
+
+  &--contrast {
+    background-image: url("../img/icon-editor-contrast-black.svg");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-contrast.svg");
+      opacity: 1;
+    }
+  }
 }
 
 .form-photo__icon-wrapper {
@@ -179,6 +239,10 @@
 .form-photo__button {
   margin-bottom: 13px;
   width: 100%;
+
+  &--crop {
+    background-image: url("../img/icon-editor-crop-active.svg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 26px;
@@ -222,10 +286,6 @@
 }
 
 .form-photo__filter-range {
-  /*margin-left: auto;
-  width: 100%;
-  height: 14px;*/
-
   height: 2px;
   margin-top: 6px;
 
@@ -246,17 +306,17 @@
   position: relative;
 
   width: 240px;
-  height: 15px;
+  height: 12px;
 
   @media (min-width: @tablet-width) {
     width: 203px;
-    height: 16px;
+    height: 12px;
     margin-left: 28px;
   }
 
   @media (min-width: @desktop-width) {
     width: 288px;
-    height: 16px;
+    height: 13px;
     margin-left: 44px;
   }
 }
@@ -277,10 +337,34 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    left: 146px;
+    &--first {
+      left: 146px;
+    }
+
+    &--second {
+      left: 24px;
+    }
+
+    &--third {
+      left: 95px;
+    }
   }
 
-  @media  (min-width: @desktop-width) {
-    left: 71px;
+  @media (min-width: @desktop-width) {
+    &--first {
+      left: 71px;
+    }
+
+    &--second {
+      left: 247px;
+    }
+
+    &--third {
+      left: 160px;
+    }
+  }
+
+  &:active {
+    background-color: @pink;
   }
 }
