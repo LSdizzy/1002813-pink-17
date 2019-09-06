@@ -185,11 +185,6 @@
     &:focus {
       opacity: 0.5;
     }
-
-    &:active {
-      background-image: url("../img/icon-editor-fill.svg");
-      opacity: 1;
-    }
   }
 
   &--contrast {
@@ -201,11 +196,6 @@
     &:hover,
     &:focus {
       opacity: 0.5;
-    }
-
-    &:active {
-      background-image: url("../img/icon-editor-contrast.svg");
-      opacity: 1;
     }
   }
 }
@@ -286,6 +276,10 @@
 }
 
 .form-photo__filter-range {
+  /*margin-left: auto;
+  width: 100%;
+  height: 14px;*/
+
   height: 2px;
   margin-top: 6px;
 
@@ -364,7 +358,8 @@
     }
   }
 
-  &:active {
+  &:hover,
+  &:focus {
     background-color: @pink;
   }
 }
