@@ -58,21 +58,19 @@
     text-transform: none;
 
     &--active {
-      border-bottom: 2px solid;
+      border-bottom: 2px solid #ffffff;
 
-      &:hover,
-      &:focus {
-        border-bottom: 2px solid @white;
+      &:hover {
+        border-bottom: 2px solid;
       }
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: @pink;
   }
 
   &:active {
-    color: fade(@white, 30%);
+    color: fade(@pink, 30%);
   }
 }

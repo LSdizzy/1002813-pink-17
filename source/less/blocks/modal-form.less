@@ -6,8 +6,8 @@
   width: 320px;
   background-color: @white;
   text-align: center;
-  z-index: 6;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  z-index: 6;
 
   &--success {
     display: none;
@@ -26,10 +26,6 @@
 
     @media (min-width: @tablet-width) {
       width: 460px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 780px;
     }
   }
 }
@@ -51,14 +47,9 @@
     padding-top: 19px;
     padding-bottom: 16px;
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       padding-left: 80px;
       padding-right: 80px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 160px;
-      padding-right: 160px;
     }
   }
 }
@@ -110,7 +101,7 @@
   &--failure {
     padding-top: 20px;
     padding-bottom: 50px;
-    background-color: @silver;
+    background-color: @white;
 
     @media (min-width: @tablet-width) {
       padding-top: 15px;
@@ -118,8 +109,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 160px;
-      padding-right: 160px;
+      padding-left: 80px;
+      padding-right: 80px;
     }
   }
 }

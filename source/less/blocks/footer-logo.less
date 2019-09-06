@@ -2,15 +2,13 @@
   display: block;
   width: 146px;
   height: 40px;
-  fill: @darkblue;
+  /*color: @bg-color-header;*/
 
-  &[href]:hover,
-  &[href]:focus {
-    color: @pink;
+  &[href]:hover {
+    fill: @pink;
   }
 
   &[href]:active {
-    fill: #283645;
     opacity: 0.3;
   }
 }
@@ -19,15 +17,9 @@
   display: block;
   width: 146px;
   height: 40px;
-  fill: #283645;
 
   &--tablet {
     display: none;
-  }
-
-  &[href]:hover,
-  &[href]:focus {
-    fill: #d22856;
   }
 
   @media (min-width: @desktop-width) {
