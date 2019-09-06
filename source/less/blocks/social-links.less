@@ -19,7 +19,7 @@
 
 .social-links__link {
   display: flex;
-  width: 45px;
+  width: 44px;
   height: 45px;
   border-width: 3px;
   border-style: solid;
@@ -30,7 +30,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: @bg-color-header;
   }
 
@@ -42,6 +43,7 @@
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
+    width: 45px;
   }
 
   &--facebook {

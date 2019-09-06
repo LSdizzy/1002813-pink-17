@@ -1,5 +1,4 @@
 .main-nav {
-  /*position: relative;*/
   background-color: @darkblue;
   color: @white;
 
@@ -8,7 +7,6 @@
     justify-content: space-between;
     align-items: center;
 
-    /*width: 940px;*/
     padding-left: 10px;
     padding-right: 10px;
 
@@ -41,7 +39,6 @@
     margin: 0 auto;
   }
 }
-
 
 .main-nav__toggle {
   align-self: flex-end;
@@ -78,7 +75,8 @@
     background-position: 1px 1px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-image: url("../img/icon-menu-cross-hover.svg");
     background-repeat: no-repeat;
   }
@@ -95,7 +93,8 @@
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-image: url("../img/icon-menu-burger-hover.svg");
     background-repeat: no-repeat;
   }
